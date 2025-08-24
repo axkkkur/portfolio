@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankur Singh - Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="loader-text">Ankur Singh</div>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
+      </div>
+      <div class="particles-loader"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">AS</div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="particles"></div>
+      <div class="hero-content">
+        <div class="hero-photo">
+          <div class="photo-placeholder">
+            <img src="ankur.jpg" alt="Ankur Singh" class="profile-photo" />
+          </div>
+          <div class="photo-glow"></div>
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="hero-name">Ankur Singh</span>
+            <span class="hero-subtitle">Full-Stack Developer</span>
+          </h1>
+          <p class="hero-description">
+            I thrive on solving complex problems. My work is about more than
+            just writing code—it's about making systems faster, more stable, and
+            more accessible. I turn challenges into opportunities to build
+            robust and scalable applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-count="450">0</div>
+            <div class="stat-label">DSA Problems Solved</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="1">0</div>
+            <div class="stat-label">Backend Internship Completed</div>
+          </div>
+        </div>
+
+        <!-- Education & Info -->
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Education</h3>
+            <div class="education-card">
+              <h4>Indian Institute of Information Technology, Una</h4>
+              <p class="degree">B.Tech in Computer Science and Engineering</p>
+              <p class="duration">Nov 2022 – Jun 2026</p>
+              <p class="location">Una, Himachal Pradesh</p>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="about-photo">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="company-info">
+              <h3>Backend Developer Intern</h3>
+              <h4>Nuclay Solutions</h4>
+              <p class="location">Gurgaon, India (Remote)</p>
+            </div>
+            <div class="duration">Jun 2024 - Aug 2024</div>
+          </div>
+
+          <div class="achievements">
+            <div class="achievement-item">
+              <i class="fas fa-rocket"></i>
+              <p>
+                Optimized RESTful APIs by integrating pagination, server-side
+                caching, and real-time data updates, reducing average response
+                latency by <strong>40%</strong>
+              </p>
+            </div>
+            <div class="achievement-item">
+              <i class="fas fa-mobile-alt"></i>
+              <p>
+                Developed a fully responsive, cross-platform Admin Panel UI
+                using React and Tailwind CSS, improving user accessibility and
+                mobile compatibility by <strong>30%</strong>
+              </p>
+            </div>
+            <div class="achievement-item">
+              <i class="fas fa-bug"></i>
+              <p>
+                Resolved over <strong>30 critical bugs</strong> and deployed
+                <strong>10+ new features</strong>, improving system stability
+                and cutting resolution time by <strong>35%</strong>
+              </p>
+            </div>
+            <div class="achievement-item">
+              <i class="fas fa-users"></i>
+              <p>
+                Led the development of scalable full-stack modules in
+                collaboration with cross-functional teams, resulting in a
+                <strong>40% reduction</strong> in backend response time
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership Position -->
+        <div class="position-card">
+          <div class="position-header">
+            <h3>Lead - Development Team</h3>
+            <h4>IIIT Una</h4>
+            <div class="duration">April 2024 – Present</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Settle It Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="project-content">
+              <h3>Settle It</h3>
+              <p class="project-duration">Sep. 2024 – Dec. 2024</p>
+              <p class="project-description">
+                Enables users to effortlessly split expenses, track payments,
+                and settle balances in groups.
+              </p>
+
+              <div class="project-achievements">
+                <div class="achievement-badge">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span>35% faster load time</span>
+                </div>
+                <div class="achievement-badge">
+                  <i class="fas fa-search"></i>
+                  <span>SEO optimized</span>
+                </div>
+                <div class="achievement-badge">
+                  <i class="fas fa-database"></i>
+                  <span>150% API optimization</span>
+                </div>
+              </div>
+
+              <div class="tech-stack">
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">ExpressJS</span>
+                <span class="tech-tag">NextJS</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">SASS</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://settle-it-gamma.vercel.app/"
+                  target="_blank"
+                  class="btn-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/axkkkur/meraki-23.git"
+                  target="_blank"
+                  class="btn-link"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meraki IIITU Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="project-content">
+              <h3>Meraki IIITU</h3>
+              <p class="project-duration">Aug. 2023 – Sep. 2023</p>
+              <p class="project-description">
+                College fest website with advanced features and optimizations.
+              </p>
+
+              <div class="project-achievements">
+                <div class="achievement-badge">
+                  <i class="fas fa-key"></i>
+                  <span>OTP Authentication</span>
+                </div>
+                <div class="achievement-badge">
+                  <i class="fas fa-trophy"></i>
+                  <span>95% Google Ranking</span>
+                </div>
+              </div>
+
+              <div class="tech-stack">
+                <span class="tech-tag">NextJS</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Jest</span>
+                <span class="tech-tag">SASS</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://meraki-23.vercel.app"
+                  target="_blank"
+                  class="btn-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/axkkkur/meraki-23.git"
+                  target="_blank"
+                  class="btn-link"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Planner Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-content">
+              <h3>Planner</h3>
+              <p class="project-description">
+                Task management and productivity application.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://planner.netlify.app/"
+                  target="_blank"
+                  class="btn-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C++</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Web Technologies</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">HTML5</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CSS3</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">RESTful APIs</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">React.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Next.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Express.js</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+      <div class="container">
+        <h2 class="section-title">Achievements & Recognition</h2>
+
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>DSA Problem Solving</h3>
+            <p>
+              Solved over
+              <strong>450+ Data Structures & Algorithms</strong> problems on
+              LeetCode, Codeforces, and GFG, consistently maintaining a
+              <strong>top 10% ranking</strong>.
+            </p>
+            <a
+              href="https://codolio.com/profile/axkkkur"
+              target="_blank"
+              class="achievement-link"
+            >
+              <i class="fas fa-external-link-alt"></i> View Profile
+            </a>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>UYIR Road Safety Hackathon 2025</h3>
+            <p>
+              <strong>Finalist</strong> for designing a prototype that improved
+              hazard detection and reporting using real-time mapping and alert
+              systems.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Flipkart GRiD 5.0</h3>
+            <p>
+              Qualified for <strong>Round 2</strong> of Software Development
+              Track by solving real-world algorithmic and system design
+              challenges with a <strong>90% test case pass rate</strong> under
+              timed constraints.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Electrothon 6.0 (NIT Hamirpur)</h3>
+            <p>
+              Ranked <strong>Top 10</strong> out of 100+ teams; praised by
+              mentors.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Prog-O-Thon 2023</h3>
+            <p>
+              Won <strong>'Best UI/UX'</strong> for React prototype among 50+
+              teams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with NEW Template ID -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-description">
+          Let's work together to create something amazing!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:ankkursinghiiitu@gmail.com"
+                  >ankkursinghiiitu@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <a href="tel:+919760903112">+91-9760903112</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <span>India</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/ankur-chaudhary-749ba4268/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/axkkkur/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form with NEW Template ID -->
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="from_name"
+                  id="from_name"
+                  placeholder="Your Name"
+                  required
+                />
+                <label for="from_name">Name</label>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="from_email"
+                  id="from_email"
+                  placeholder="Your Email"
+                  required
+                />
+                <label for="from_email">Email</label>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <label for="subject">Subject</label>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">
+                  <i class="fas fa-paper-plane"></i>
+                  Send Message
+                </span>
+                <span class="btn-loading">
+                  <i class="fas fa-spinner fa-spin"></i>
+                  Sending...
+                </span>
+              </button>
+            </form>
+
+            <!-- Success/Error Messages -->
+            <div id="form-messages" class="form-messages">
+              <div id="success-message" class="message success-message">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Message Sent Successfully! 🎉</h4>
+                  <p>
+                    Thank you for reaching out! I'll get back to you within 24
+                    hours.
+                  </p>
+                </div>
+              </div>
+
+              <div id="error-message" class="message error-message">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                  <h4>Message Failed to Send 😞</h4>
+                  <p id="error-details">
+                    There was an issue sending your message.
+                  </p>
+                  <div class="error-actions">
+                    <button id="retry-btn" class="retry-btn">
+                      <i class="fas fa-redo"></i> Try Again
+                    </button>
+                    <a
+                      href="mailto:ankkursinghiiitu@gmail.com"
+                      class="direct-email-btn"
+                    >
+                      <i class="fas fa-envelope"></i> Email Directly
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Ankur Singh. All rights reserved. Built with ❤️ and
+          cutting-edge web technologies.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
